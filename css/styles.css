@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Monotype;
+    src: url(../assets/fonts/monotype-corsiva.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/*Variables*/
+:root{
+    --cor-principal:#C19D56;
+    --cor-secundaria:#FFFFFF;
+
+    --fonte-principal:Monotype;
+    --fonte-secundaria:Montserrat;
+}
+
+
+/*Reset estilos*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: black;
+ color: var(--cor-principal);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: Monotype;
+}
+
+button {
+ cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Estilos xerais */
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 35px;
+}
+
+.header__ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 38px;
+}
+
+.header__a{
+    font-family: var(--fonte-secundaria);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/*Main*/
+.main__sup{
+    height: 900px;
+    background-image: url(../assets/piedras-de-santiago-tradicion-ciudad.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.main__info{
+    width: 514px;
+    margin-left: 5%;
+}
+
+.main__h2{
+    font-size: 48px;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin-bottom: 45px ;
+    color: rgba(193, 157, 86, 0.75);
+    font-weight: 400;
+}
+
+.main__boton{
+    width: 168px;
+    height: 48px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+.main__inf{
+    padding-top: 111px;
+    min-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+    justify-content: space-evenly;
+    background-color: var(--cor-secundaria);
+}
+
+.main__box{
+    width: 301px;
+    height: 379px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.501);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom:15px ;
+}
+
+.box1{
+    background-image:url(../assets/components/intro-sobre-nosotros.webp) ;
+}
+
+.box2{
+    background-image:url(../assets/components/intro-elaboracion.webp) ;
+}
+
+.box3{
+    background-image:url(../assets/components/intro-para-empresas.webp) ;
+}
+
+.box4{
+    background-image:url(../assets/components/intro-eventos.webp) ;
+}
+
+.main__img{
+    width: 90px;
+}
+
+.main__p{
+    font-size: 26px;
+    color: var(--cor-secundaria);
+}
+
+
+/* Footer */
+footer{
+    min-height: 99px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__p{
+    margin-left: 35px;
+    font-family: var(--fonte-secundaria);
+}
