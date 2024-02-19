@@ -121,7 +121,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 44px;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: var(--cor-secundaria);
 }
 
@@ -135,6 +135,25 @@ header{
     justify-content: center;
     gap: 30px;
     margin-bottom:15px ;
+    transition: all 0.3s;
+}
+
+.main__box:hover{
+    backdrop-filter: brightness(50%);
+    box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.501);
+    filter: brightness(150%);
+}
+
+.capa{
+    position: absolute;
+    overflow: hidden;
+    width: 301px;
+    height: 379px;
+    transition: all 0.3s;
+}
+
+.capa:hover{
+    background-color: #c19d5620;
 }
 
 .box1{
