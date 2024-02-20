@@ -71,9 +71,35 @@ header{
     gap: 16px 38px;
 }
 
+.header__li{
+    overflow: hidden;
+}
+
 .header__a{
     font-family: var(--fonte-secundaria);
     color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.header__a::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    bottom: 0;
+    transform: translateX(-100%);
+}
+
+.header__a:hover::before{
+    transform: translateX(0);
+    transition: all 0.3s linear;
+}
+
+.header__a:hover{
+    color: #fff;
 }
 
 
