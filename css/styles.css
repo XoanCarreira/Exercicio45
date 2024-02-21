@@ -65,10 +65,14 @@ header{
     padding: 16px 35px;
 }
 
+.logo__img{
+    width: 150px;
+}
+
 .header__ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 38px;
+    gap: 5px 38px;
 }
 
 .header__li{
@@ -90,7 +94,7 @@ header{
     width: 100%;
     background-color: #fff;
     bottom: 0;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
 }
 
 .header__a:hover::before{
